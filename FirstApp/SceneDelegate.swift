@@ -16,9 +16,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let scene = (scene as? UIWindowScene) else { return }
         
+        let tabbar = UITabBarController()
+        
+        let homeVC = UINavigationController(rootViewController: HomeViewController())
+        let newHotVC = UINavigationController(rootViewController: NewHotViewController())
+        let storedVC = UINavigationController(rootViewController: StoredViewController())
+
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
+        newHotVC.tabBarItem = UITabBarItem(title: "New & Hot", image: UIImage(systemName: "star.fill"), tag: 1)
+        storedVC.tabBarItem = UITabBarItem(title: "저장", image: UIImage(systemName: "pencil"), tag: 2)
+        
+        tabbar.viewControllers = [homeVC, newHotVC, storedVC]
+        
         window = UIWindow(windowScene: scene)
         
-        window?.rootViewController = TabBarViewController()
+        window?.rootViewController = tabbar
+        
         window?.makeKeyAndVisible()
         
     }

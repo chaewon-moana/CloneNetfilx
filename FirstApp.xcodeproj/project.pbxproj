@@ -13,7 +13,7 @@
 		DE7C6EA52B637F27005B2AFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EA42B637F27005B2AFE /* HomeViewController.swift */; };
 		DE7C6EA72B637F6D005B2AFE /* NewHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EA62B637F6D005B2AFE /* NewHotViewController.swift */; };
 		DE7C6EA92B637F84005B2AFE /* StoredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EA82B637F84005B2AFE /* StoredViewController.swift */; };
-		DE7C6EAB2B638166005B2AFE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EAA2B638166005B2AFE /* TabBarViewController.swift */; };
+		DE7C6EAE2B63864A005B2AFE /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7C6EAD2B63864A005B2AFE /* UserDefaultsManager.swift */; };
 		DE9E6E512B3A8E3100C6AB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E6E502B3A8E3100C6AB12 /* AppDelegate.swift */; };
 		DE9E6E532B3A8E3100C6AB12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9E6E522B3A8E3100C6AB12 /* SceneDelegate.swift */; };
 		DE9E6E582B3A8E3100C6AB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE9E6E562B3A8E3100C6AB12 /* Main.storyboard */; };
@@ -32,7 +32,7 @@
 		DE7C6EA42B637F27005B2AFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DE7C6EA62B637F6D005B2AFE /* NewHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHotViewController.swift; sourceTree = "<group>"; };
 		DE7C6EA82B637F84005B2AFE /* StoredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredViewController.swift; sourceTree = "<group>"; };
-		DE7C6EAA2B638166005B2AFE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DE7C6EAD2B63864A005B2AFE /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		DE9E6E4D2B3A8E3100C6AB12 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9E6E502B3A8E3100C6AB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE9E6E522B3A8E3100C6AB12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,9 +112,16 @@
 				DE7C6EA42B637F27005B2AFE /* HomeViewController.swift */,
 				DE7C6EA62B637F6D005B2AFE /* NewHotViewController.swift */,
 				DE7C6EA82B637F84005B2AFE /* StoredViewController.swift */,
-				DE7C6EAA2B638166005B2AFE /* TabBarViewController.swift */,
 			);
 			path = CodeBase;
+			sourceTree = "<group>";
+		};
+		DE7C6EAC2B638640005B2AFE /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DE7C6EAD2B63864A005B2AFE /* UserDefaultsManager.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		DE9E6E442B3A8E3000C6AB12 = {
@@ -136,6 +143,7 @@
 		DE9E6E4F2B3A8E3100C6AB12 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE7C6EAC2B638640005B2AFE /* User */,
 				DE7C6EA32B637F0F005B2AFE /* CodeBase */,
 				DE7C6EA12B637EDF005B2AFE /* Test */,
 				DE7C6E992B637E15005B2AFE /* Storyboard */,
@@ -227,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7C6EAE2B63864A005B2AFE /* UserDefaultsManager.swift in Sources */,
 				DE9E6EAD2B3C384500C6AB12 /* SecondViewController.swift in Sources */,
 				DE7C6EA92B637F84005B2AFE /* StoredViewController.swift in Sources */,
 				DE9E6EAB2B3C2F7400C6AB12 /* FirstViewController.swift in Sources */,
@@ -237,7 +246,6 @@
 				DE9E6E532B3A8E3100C6AB12 /* SceneDelegate.swift in Sources */,
 				DE7C6EA72B637F6D005B2AFE /* NewHotViewController.swift in Sources */,
 				DE9E6EA52B3BF10A00C6AB12 /* MainViewController.swift in Sources */,
-				DE7C6EAB2B638166005B2AFE /* TabBarViewController.swift in Sources */,
 				DE9E6EB32B3C484300C6AB12 /* NetFilxViewController.swift in Sources */,
 				DE7C6EA52B637F27005B2AFE /* HomeViewController.swift in Sources */,
 			);
