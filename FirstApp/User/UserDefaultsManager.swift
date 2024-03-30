@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserDefaultsManager {
+class UserDefaultsManager {
     
     private init() { }
     
@@ -21,7 +21,7 @@ struct UserDefaultsManager {
     
     var name: String {
         get {
-            ud.string(forKey: User.name.rawValue) ?? "닉네임"
+            ud.string(forKey: User.name.rawValue) ?? "닉네임입력요망"
         }
         set {
             ud.set(newValue, forKey: User.name.rawValue)

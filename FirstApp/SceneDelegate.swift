@@ -26,6 +26,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         newHotVC.tabBarItem = UITabBarItem(title: "New & Hot", image: UIImage(systemName: "star.fill"), tag: 1)
         storedVC.tabBarItem = UITabBarItem(title: "저장", image: UIImage(systemName: "pencil"), tag: 2)
         
+        tabbar.tabBar.tintColor = .white
+        
         tabbar.viewControllers = [homeVC, newHotVC, storedVC]
         
         window = UIWindow(windowScene: scene)
